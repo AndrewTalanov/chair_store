@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;500&display=swap');
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-grey--light: #EFEFEF;
+    --color-grey--dark: #333333;
+
+    --color-green: #66C05D;
+
+    --fs-default: 16px;
+    --fs-small: 14px;
+    --fs-big: 18px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+}
+
+h1, h2, h3, p, a, span, button, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-default);
+    margin: 0;
+    text-decoration: none;
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: inherit;
+    transition: .4s;
+    display: inline-block;
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        width: 85%;
+    }
+}
+
+// для блока с "обратный звонок" в header и footer
+.block-feedback {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    a {
+        color: var(--color-black);
+    }
+    .button {
+        padding: 12px 27px;
+        border: 2px solid var(--color-green);
+    }
+}

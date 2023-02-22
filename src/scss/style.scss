@@ -1,0 +1,10 @@
+@use "sass:math";
+
+// Глобальные / дефолтные стили
+@import "normalize";
+@import "global";
+
+//  Стили отдельных блоков
+@import "header";
+@import "main";
+@import "footer";
